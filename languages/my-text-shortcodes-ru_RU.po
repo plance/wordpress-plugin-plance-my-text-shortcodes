@@ -1,0 +1,169 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: My Shortcode plugin by Plance\n"
+"POT-Creation-Date: 2025-07-12 20:28+0300\n"
+"PO-Revision-Date: 2025-07-12 20:28+0300\n"
+"Last-Translator: Pavel\n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Poedit-KeywordsList: __;_e;_x;_n;gettext;gettext_noop;esc_html_e;_;_ex;"
+"_nx\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/class-admin-menu.php:35 includes/class-admin-menu.php:44
+#: includes/class-admin-menu.php:45 includes/class-controller-table.php:112
+msgid "List shortcodes"
+msgstr ""
+
+#: includes/class-admin-menu.php:36
+msgid "My shortcodes"
+msgstr ""
+
+#: includes/class-admin-menu.php:53 includes/class-controller-form.php:136
+msgid "Creating shortcode"
+msgstr ""
+
+#: includes/class-admin-menu.php:54
+msgid "Create shortcode"
+msgstr ""
+
+#: includes/class-controller-form.php:72
+msgid "Shortcode updated"
+msgstr ""
+
+#: includes/class-controller-form.php:88
+msgid "Shortcode created"
+msgstr ""
+
+#: includes/class-controller-form.php:118
+msgid "Shortcode not found!"
+msgstr ""
+
+#: includes/class-controller-form.php:133
+msgid "Editing shortcode"
+msgstr ""
+
+#: includes/class-controller-form.php:160
+#: includes/class-table-shortcodes.php:60 templates/admin/form.php:21
+msgid "Title"
+msgstr ""
+
+#: includes/class-controller-form.php:161
+#: includes/class-table-shortcodes.php:61 templates/admin/form.php:27
+msgid "Code"
+msgstr ""
+
+#: includes/class-controller-form.php:162
+#: includes/class-table-shortcodes.php:62 templates/admin/form.php:38
+msgid "State"
+msgstr ""
+
+#: includes/class-controller-form.php:163 templates/admin/form.php:47
+msgid "Description"
+msgstr ""
+
+#: includes/class-controller-form.php:168
+msgid "This shortcode does not exist"
+msgstr ""
+
+#: includes/class-controller-form.php:180
+#, php-format
+msgid "\"%s\" must not be empty"
+msgstr ""
+
+#: includes/class-controller-form.php:186
+#: includes/class-controller-form.php:191
+msgid "\"%1$s\" must not exceed %1$d characters long"
+msgstr ""
+
+#: includes/class-controller-form.php:196
+#, php-format
+msgid "\"%s\" does not match the required format"
+msgstr ""
+
+#: includes/class-controller-form.php:201
+msgid "This shortcode has already been taken, select another shortcod"
+msgstr ""
+
+#: includes/class-controller-form.php:207
+#, php-format
+msgid "\"%s\" must be one of the available options"
+msgstr ""
+
+#: includes/class-controller-table.php:36
+msgid "Records"
+msgstr ""
+
+#: includes/class-controller-table.php:71
+msgid "Shortcodes deleted"
+msgstr ""
+
+#: includes/class-controller-table.php:84
+msgid "Shortcodes hide"
+msgstr ""
+
+#: includes/class-controller-table.php:97
+msgid "Shortcodes show"
+msgstr ""
+
+#: includes/class-controller-table.php:114
+msgid "Add shortcode"
+msgstr ""
+
+#: includes/class-controller-table.php:119
+msgid "Search"
+msgstr ""
+
+#: includes/class-table-shortcodes.php:59
+msgid "ID"
+msgstr ""
+
+#: includes/class-table-shortcodes.php:63
+msgid "Date create"
+msgstr ""
+
+#: includes/class-table-shortcodes.php:138
+msgid "Data not found"
+msgstr ""
+
+#: includes/class-table-shortcodes.php:181
+msgid "hidden"
+msgstr ""
+
+#: includes/class-table-shortcodes.php:183
+msgid "showen"
+msgstr ""
+
+#: includes/class-table-shortcodes.php:210
+msgid "edit"
+msgstr ""
+
+#: includes/class-table-shortcodes.php:211
+msgid "delete"
+msgstr ""
+
+#: includes/class-table-shortcodes.php:223
+msgid "Delete"
+msgstr ""
+
+#: includes/class-table-shortcodes.php:224 templates/admin/form.php:41
+msgid "Show"
+msgstr ""
+
+#: includes/class-table-shortcodes.php:225 templates/admin/form.php:42
+msgid "Hide"
+msgstr ""
+
+#: templates/admin/form.php:32
+msgid ""
+"Only Latin letters (a-z), digits (0-9), and hyphens (-) are allowed; the "
+"code must start and end with a letter or digit."
+msgstr ""
