@@ -1,0 +1,29 @@
+.wp-list-table {
+	.column-cb {
+		width: 4%;
+	}
+
+	.column-sh_id {
+		width: 5%;
+	}
+
+	.column-sh_title {
+		width: 45%;
+	}
+
+	.column-sh_code {
+		width: 25%;
+	}
+
+	.column-sh_is_lock {
+		width: 10%;
+	}
+
+	.column-sh_date_create {
+		width: 11%;
+	}
+
+	.pl-tr-important td {
+		color: #EA6047;
+	}
+}
