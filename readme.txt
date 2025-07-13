@@ -1,11 +1,13 @@
 === My Text Shortcodes ===
 Contributors: plance
-Tags: shortcode, text, html, post, page, content, banner, ad
+Tags: shortcode, text, html, banner, ad
 Requires at least: 4.0.0
 Tested up to: 6.8
 Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+A lightweight plugin for creating and managing custom text shortcodes.
 
 == Description ==
 A lightweight plugin for creating and managing custom text shortcodes.

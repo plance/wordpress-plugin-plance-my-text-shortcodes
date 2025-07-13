@@ -46,7 +46,23 @@ class Controller_Form {
 		$is_post_request = strtolower( filter_input( INPUT_SERVER, 'REQUEST_METHOD', FILTER_SANITIZE_FULL_SPECIAL_CHARS ) ) === 'post';
 
 		if ( $is_post_request ) {
-			$input  = filter_input( INPUT_POST, 'shortcode', FILTER_SANITIZE_FULL_SPECIAL_CHARS, FILTER_REQUIRE_ARRAY );
+			$input = filter_input( INPUT_POST, 'shortcode', FILTER_DEFAULT, FILTER_REQUIRE_ARRAY );
+			$input = filter_var_array(
+				$input,
+				array(
+					'sh_title'       => array(
+						'filter'  => FILTER_CALLBACK,
+						'options' => 'sanitize_text_field',
+					),
+					'sh_code'        => array(
+						'filter'  => FILTER_CALLBACK,
+						'options' => 'sanitize_text_field',
+					),
+					'sh_description' => FILTER_DEFAULT,
+					'sh_is_lock'     => FILTER_SANITIZE_NUMBER_INT,
+				)
+			);
+
 			$errors = $this->validate( $input, $shortcode_id );
 
 			if ( empty( $errors ) ) {
