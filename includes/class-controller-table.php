@@ -109,9 +109,9 @@ class Controller_Table {
 		?>
 		<div class="wrap">
 			<h2>
-				<?php esc_html_e( 'List shortcodes', 'my-text-shortcodes' ); ?>
+				<?php esc_html_e( 'List Shortcodes', 'my-text-shortcodes' ); ?>
 				<a href="<?php echo esc_url( add_query_arg( array( 'page' => Controller_Form::SLUG ) ) ); ?>" class="page-title-action">
-					<?php esc_html_e( 'Add shortcode', 'my-text-shortcodes' ); ?>
+					<?php esc_html_e( 'Add Shortcode', 'my-text-shortcodes' ); ?>
 				</a>
 			</h2>
 			<form method="get">

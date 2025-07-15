@@ -46,6 +46,11 @@ class Controller_Form {
 		$is_post_request = strtolower( filter_input( INPUT_SERVER, 'REQUEST_METHOD', FILTER_SANITIZE_FULL_SPECIAL_CHARS ) ) === 'post';
 
 		if ( $is_post_request ) {
+			$input_wpnonce = filter_input( INPUT_POST, '_wpnonce', FILTER_CALLBACK, array( 'options' => 'sanitize_text_field' ) );
+			if ( ! wp_verify_nonce( $input_wpnonce, SECURITY ) ) {
+				Flash::redirect( add_query_arg( array( 'page' => Controller_Table::SLUG ), admin_url( 'admin.php' ) ), __( 'Wrong `wpnonce` value!', 'my-maps' ), false );
+			}
+
 			$input = filter_input( INPUT_POST, 'shortcode', FILTER_DEFAULT, FILTER_REQUIRE_ARRAY );
 			$input = filter_var_array(
 				$input,
@@ -146,10 +151,10 @@ class Controller_Form {
 		$query_args   = array( 'page' => self::SLUG );
 
 		if ( $shortcode_id ) {
-			$form_title                 = __( 'Editing shortcode', 'my-text-shortcodes' );
+			$form_title                 = __( 'Editing Shortcode', 'my-text-shortcodes' );
 			$query_args['shortcode_id'] = $shortcode_id;
 		} else {
-			$form_title = __( 'Creating shortcode', 'my-text-shortcodes' );
+			$form_title = __( 'Creating Shortcode', 'my-text-shortcodes' );
 		}
 
 		load_template(

@@ -32,8 +32,8 @@ class Admin_Menu {
 	 */
 	public function admin_menu() {
 		$hook_list = add_menu_page(
-			__( 'List shortcodes', 'my-text-shortcodes' ),
-			__( 'My shortcodes', 'my-text-shortcodes' ),
+			__( 'List Shortcodes', 'my-text-shortcodes' ),
+			__( 'My Shortcodes', 'my-text-shortcodes' ),
 			'manage_options',
 			Controller_Table::SLUG,
 			array( Controller_Table::instance(), 'render' )
@@ -41,8 +41,8 @@ class Admin_Menu {
 
 		add_submenu_page(
 			Controller_Table::SLUG,
-			__( 'List shortcodes', 'my-text-shortcodes' ),
-			__( 'List shortcodes', 'my-text-shortcodes' ),
+			__( 'List Shortcodes', 'my-text-shortcodes' ),
+			__( 'List Shortcodes', 'my-text-shortcodes' ),
 			'manage_options',
 			Controller_Table::SLUG,
 			array( Controller_Table::instance(), 'render' )
@@ -50,8 +50,8 @@ class Admin_Menu {
 
 		$hook_form = add_submenu_page(
 			Controller_Table::SLUG,
-			__( 'Creating shortcode', 'my-text-shortcodes' ),
-			__( 'Create shortcode', 'my-text-shortcodes' ),
+			__( 'Creating Shortcode', 'my-text-shortcodes' ),
+			__( 'Create Shortcode', 'my-text-shortcodes' ),
 			'manage_options',
 			Controller_Form::SLUG,
 			array( Controller_Form::instance(), 'render' )

@@ -28,6 +28,10 @@ Each shortcode is automatically assigned a unique name in the format `[mtsc-name
 2. Admin form for creating a new shortcode with name and content fields.
 
 == Changelog ==
+= 1.1.1 =
+* Change labels.
+* Fix security.
+
 = 1.1.0 =
 * Complete code refactoring.
 
