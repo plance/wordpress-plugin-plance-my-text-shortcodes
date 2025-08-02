@@ -7,7 +7,7 @@
  * Plugin Name: My Text Shortcodes
  * Description: Creating text shortcodes, using friendly interface
  * Plugin URI:  https://plance.top/
- * Version:     1.1.1
+ * Version:     1.1.2
  * Author:      plance
  * Author URI: http://plance.top/
  * License:     GPL v2 or later

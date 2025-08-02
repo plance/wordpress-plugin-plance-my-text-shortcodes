@@ -3,7 +3,7 @@ Contributors: plance
 Tags: shortcode, text, html, banner, ad
 Requires at least: 4.0.0
 Tested up to: 6.8
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,6 +28,9 @@ Each shortcode is automatically assigned a unique name in the format `[mtsc-name
 2. Admin form for creating a new shortcode with name and content fields.
 
 == Changelog ==
+= 1.1.2 =
+* Added support for installing a plugin for the multisite.
+
 = 1.1.1 =
 * Change labels.
 * Fix security.
